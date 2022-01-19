@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edit_text_1"
+        android:layout_width="100sp"
+        android:layout_height="50sp"
+        android:layout_toStartOf="@id/button_1"
+        android:layout_above="@id/button_1"
+        android:layout_marginBottom="20sp"
+        android:inputType="number"
+        android:hint="Min."/>
+
+    <EditText
+        android:id="@+id/edit_text_2"
+        android:layout_width="100sp"
+        android:layout_height="50sp"
+        android:layout_toEndOf="@id/button_1"
+        android:layout_above="@id/button_1"
+        android:layout_marginBottom="20sp"
+        android:inputType="number"
+        android:hint="Max."/>
+
+
+    <Button
+        android:id="@+id/button_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="click"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/text_view_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_below="@id/button_1"
+        android:layout_marginTop="20sp"
+        android:hint="Result"/>
+
+</RelativeLayout>
